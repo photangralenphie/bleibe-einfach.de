@@ -6,36 +6,67 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="second.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Khula">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fresca">
 	<link href="lightbox/css/lightbox.css" rel="stylesheet">
-	<title>Titel</title>
+	<script src="nav.js" async></script>
+	<title>Impressum | "Bleibe - Einfach" - Unterkunft für Pilger und Radfahrer</title>
+	
+	<!--references for favicon-->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#6c5353">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#6c5353">
+
+	<!--references for share card-->
+	<meta property="og:title" content="&quot;Bleibe - Einfach&quot; - Unterkunft f&uuml;r Pilger und Radfahrer">
+	<meta property="og:description" content="&quot;Bleibe - Einfach&quot; - Unterkunft f&uuml;r Pilger und Radfahrer in Leipzig - Thekla an verschieden Rad- und Pilgerwegen.">
+	<meta property="og:image:height" content="520">
+	<meta property="og:image:width" content="993">
+	<meta property="og:url" content="https://www.bleibe-einfach.de">
+	<meta property="og:image" content="https://www.bleibe-einfach.de/bilder/1.jpg">
+
+	<!--keywords and other stuff-->
+	<meta name="keywords" content="Impressum">
+	<meta name="description" content="Impressum, Unterkunft für Pilger und Radfahrer in Leipzig - Thekla">
+	<meta name="author" content="Jonas Helmer, Steffen Helmer">
+
+	<!--Google search console-->
+	<meta name="google-site-verification" content="VgvvC-7kSSXZGpaH8UnqfrhqYkwUaU-R2lT60H03skw" />
 </head>
 <body>
 
 <header>
+	<nav>
+		<input type="checkbox" id="nav-toggle" class="nav-toggle">
+		<label for="nav-toggle" class="nav-toggle-lable">
+			Menu
+			<img src="bilder/bars-solid.svg" alt="menu button">
+		</label>
+		<div class="links">
+			<a href="#unterkunft" onclick="toggle()">Unterkunft</a>
+			<a href="#ausstattung" onclick="toggle()">Ausstattung</a>
+			<a href="#reservierung" onclick="toggle()">Reservierung</a>
+			<a href="#preise" onclick="toggle()">Preise</a>
+			<a href="#anreise" onclick="toggle()">Anreise</a>
+			<a href="#umgebung" onclick="toggle()">Umgebung</a>
+		</div>
+	</nav>
 	<div class="bild1">
-		<p class="erster_weg">Radweg Berlin-Leipzig</p>
-		<p class="zweiter_weg">Parte-Mulde-Radweg</p>
-		<p class="dritter_weg">Grüner Ring Leipzig</p>
+		<img src="bilder/strassenschild.jpg" alt="Bild vom Straßenschild">
 	</div>
-	<h1>Fahrradunterkunft Leipzig</h1>
-	<p class="adresse">An den Pferdnerkabeln</p>
+	<div class="wege">
+		<p class="erster_weg"><a href="http://www.jakobswege-europa.de/wege/via-imperii.htm" target="_blank">Via Imperii Stettin-Hof</a></p>
+		<p class="zweiter_weg"><a href="https://www.radweg-berlin-leipzig.de/" target="_blank">Radweg Berlin-Leipzig</a></p>
+		<p class="dritter_weg"><a href="http://www.jakobswege-europa.de/wege/brandenburg.htm" target="_blank">Jakobsweg aus Brandenburg</a></p>
+	</div>
+	<h1>"Bleibe - Einfach"</h1>
+	<p class="untertitel">Unterkunft für Pilger und Radfahrer</p>
 </header>
-
-<nav>
-	<input type="checkbox" id="nav-toggle" class="nav-toggle">
-	<label for="nav-toggle" class="nav-toggle-lable">
-		<p>Menu</p>
-		<img src="bilder/bars-solid.svg">
-	</label>
-	<ul>
-		<li><a href="index.html#unterkunft">Unterkunft</a></li>
-		<li><a href="index.html#preise">Preise</a></li>
-		<li><a href="index.html#reservierung">Reservierung</a></li>
-		<li><a href="index.html#anreise">Anreise</a></li>
-		<li><a href="index.html#umgebung">Umgebung</a></li>
-	</ul>
-</nav>
 
 <main>
 	<h2 class="h2">Impressum gemäß § 5 TMG:</h2>
@@ -81,17 +112,19 @@
 		Fotos: <a class="a" href="https://www.photangralenphie.com">Jonas Helmer</a><br>
 		Lightbox by Lokesh Dhakar: <a class="a" href="https://www.lokeshdhakar.com/projects/lightbox2/">https://www.lokeshdhakar.com/projects/lightbox2/</a> 
 	</p>
-	<p class="p">Websiteversion b0.1<p class="p">
+	<p class="p">Websiteversion 1.1.2<p class="p">
 </main>
 
 <footer>
-	<p>&#169; Copyright: Jonas Helmer</p>
+	<p>&#169; bleibe-einfach.de</p>
 	<a href="index.html#">Home</a>
 	<a href="impressum.html">Impressum</a>
 	<a href="datenschutz.html">Datenschutzerklärung</a>
 </footer>
 
-<div class="top"><a href="#"><img src="bilder/angle-double-up-solid.svg"></a></div>
+<div class="top"><a href="#"><img src="bilder/angle-double-up-solid.svg" alt="topbutton"></a></div>
 
+<script src="lightbox/js/lightbox-plus-jquery.js"></script>
+<!--  Lightbox by Lokesh Dhakar: Website: https://www.lokeshdhakar.com/projects/lightbox2/ -->
 </body>
 </html>
