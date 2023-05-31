@@ -336,9 +336,9 @@ footer a img {
 }
 
 @media only screen and (min-width: 800px) {
-	/*a::before{
+	/*.links a::before{
 		content: "";
-		position: absolute;
+		position: relative;
 		left: 0;
 		top: 0;
 		width: 100%;
@@ -349,11 +349,11 @@ footer a img {
 		transition: transform 150ms ease-in;
 	}
 	
-	a:hover::before{
+	.links a:hover::before{
 		transform: scaleX(1);
 		transform-origin: left;
 	}
-	not availible at the moment because of effect-issues*/
+	/*not availible at the moment because of effect-issues*/
 
 	.wege {
 		margin-top: 0.5em;
