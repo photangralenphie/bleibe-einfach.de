@@ -1,0 +1,13 @@
+/* fresca-regular - latin */
+@font-face {
+    font-family: 'Fresca';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/fresca-v18-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/fresca-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/fresca-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/fresca-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/fresca-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/fresca-v18-latin-regular.svg#Fresca') format('svg'); /* Legacy iOS */
+  }
