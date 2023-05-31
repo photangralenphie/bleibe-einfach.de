@@ -321,6 +321,11 @@ iframe{
 	min-height: 300px;
 }
 
+.roundimage {
+	height: 100%;
+	min-height: 400px;
+}
+
 .calender p, .anreise p {
 	font-size: 0.8em;
 	margin: 0.5em 2em;
