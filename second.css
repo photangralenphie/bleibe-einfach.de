@@ -9,12 +9,12 @@
 }
 
 .h3 {
-    margin: 0 0.5em;
+    margin: 0 1.5em;
     font-size: 2em;
 }
 
 .h4 {
-    margin: 0 0.5em;
+    margin: 0 2em;
     font-size: 1.5em;
     text-decoration: underline;
     margin-bottom: 0;
@@ -27,11 +27,11 @@
 .ul {
     font-size: 1.5em;
     margin-top: 0;
-    margin-left: 3em;
+    margin-left: 3.5em;
 }
 
 .p {
-    margin: 0 1em 2em;
+    margin: 0 2em 2em;
     font-size: 1.5em;
 }
 
