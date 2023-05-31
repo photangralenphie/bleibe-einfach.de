@@ -321,6 +321,10 @@ footer a, footer p {
 	padding: 0.5em 0;
 }
 
+footer a img {
+	height: 2em;
+}
+
 /*  vvvv   media queries for big screens   vvvv  */
 
 
