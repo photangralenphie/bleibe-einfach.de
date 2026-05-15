@@ -26,6 +26,8 @@ jobs:
           mirror -R \
             --delete \
             --verbose \
+            --exclude-glob .git/ \
+            --exclude-glob .github/ \
             ./ "$REMOTE_PATH"
           bye
           EOF
