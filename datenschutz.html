@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="/second.css">
 	<link rel="stylesheet" href="/fonts/Fresca.css">
 	<link rel="stylesheet" href="/lightbox/css/lightbox.css">
-	<script src="/nav.js" async></script>
+	<script type="module" src="/components/header.js"></script>
 	<title>Datenschutzerkl&auml;rung | "Bleibe - Einfach" - Unterkunft f&uuml;r Pilger und Radfahrer</title>
 	
 	<!--references for favicon-->
@@ -40,34 +40,7 @@
 </head>
 <body>
 
-<header>
-	<nav>
-		<input type="checkbox" id="nav-toggle" class="nav-toggle">
-		<label for="nav-toggle" class="nav-toggle-lable">
-			Men&uuml;
-			<img src="/bilder/bars-solid.svg" alt="menu button">
-		</label>
-		<div class="links">
-			<a href="/index.html#unterkunft" onclick="toggle()">Unterkunft</a>
-			<a href="/index.html#ausstattung" onclick="toggle()">Ausstattung</a>
-			<a href="/index.html#reservierung" onclick="toggle()">Reservierung</a>
-			<a href="/index.html#preise" onclick="toggle()">Preise</a>
-			<a href="/index.html#anreise" onclick="toggle()">Anreise</a>
-			<a href="/index.html#umgebung" onclick="toggle()">Umgebung</a>
-		</div>
-	</nav>
-	<div class="bild1">
-		<img src="/bilder/strassenschild.jpg" alt="Bild vom Straßenschild">
-	</div>
-	<div class="wege">
-		<p class="erster_weg"><a href="http://www.jakobswege-europa.de/wege/via-imperii.htm" target="_blank">Via Imperii Stettin-Hof</a></p>
-		<p class="zweiter_weg"><a href="https://www.radweg-berlin-leipzig.de/" target="_blank">Radweg Berlin-Leipzig</a></p>
-		<p class="dritter_weg"><a href="http://www.jakobswege-europa.de/wege/brandenburg.htm" target="_blank">Jakobsweg aus Brandenburg</a></p>
-		<p class="vierter_weg"><a href="https://www.lutherweg-sachsen.de/" target="_blank">Lutherweg in Sachsen</a></p>
-	</div>
-	<h1>"Bleibe - Einfach"</h1>
-	<p class="untertitel">Unterkunft f&uuml;r Pilger und Radfahrer</p>
-</header>
+<site-header></site-header>
 
 <main>
 	<h2 class="h2">Datenschutzerkl&auml;rung</h2>
