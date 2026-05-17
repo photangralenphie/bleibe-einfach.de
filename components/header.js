@@ -1,7 +1,7 @@
 class SiteHeader extends HTMLElement {
 
-    toggle(checked) {
-        var elm = document.getElementById('nav-toggle');
+    toggleNavbar(checked) {
+        var elm = this.querySelector('#nav-toggle');
         var width = window.innerWidth
         if (checked != elm.checked && width < 1000) {
             elm.click();
@@ -18,12 +18,12 @@ class SiteHeader extends HTMLElement {
                         <img src="/bilder/bars-solid.svg" alt="menu button">
                     </label>
                     <div class="links">
-                        <a href="#unterkunft" onclick="toggle()">Unterkunft</a>
-                        <a href="#ausstattung" onclick="toggle()">Ausstattung</a>
-                        <a href="#reservierung" onclick="toggle()">Reservierung</a>
-                        <a href="#preise" onclick="toggle()">Preise</a>
-                        <a href="#anreise" onclick="toggle()">Anreise</a>
-                        <a href="#umgebung" onclick="toggle()">Umgebung</a>
+                        <a href="/#unterkunft">Unterkunft</a>
+                        <a href="/#ausstattung">Ausstattung</a>
+                        <a href="/#reservierung">Reservierung</a>
+                        <a href="/#preise">Preise</a>
+                        <a href="/#anreise">Anreise</a>
+                        <a href="/#umgebung">Umgebung</a>
                     </div>
                 </nav>
                 <div class="bild1">
@@ -39,6 +39,10 @@ class SiteHeader extends HTMLElement {
                 <p class="untertitel">Unterkunft f&uuml;r Pilger und Radfahrer</p>
             </header>
         `
+
+        this.querySelectorAll('.links a').forEach(link => 
+            link.addEventListener('click', () => this.toggleNavbar(false))
+        )
     }
 }
 
