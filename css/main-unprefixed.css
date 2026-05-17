@@ -17,10 +17,13 @@
 	box-sizing: border-box; 
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: Fresca, sans-serif;
 	background-image: linear-gradient(var(--white), var(--accent-color));
-	scroll-behavior: smooth;
 	margin: 0;
 	padding: 0;
 	font-size: 62.5%;
