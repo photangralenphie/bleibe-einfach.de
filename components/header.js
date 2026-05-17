@@ -13,7 +13,7 @@ class SiteHeader extends HTMLElement {
             <header>
                 <nav>
                     <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                    <label for="nav-toggle" class="nav-toggle-lable">
+                    <label for="nav-toggle" class="nav-toggle-label">
                         Men&uuml;
                         <img src="/bilder/bars-solid.svg" alt="menu button">
                     </label>

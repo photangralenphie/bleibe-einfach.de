@@ -86,7 +86,7 @@ nav {
 	display: none;
 }
 
-.nav-toggle-lable{
+.nav-toggle-label {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -moz-box;
@@ -102,13 +102,22 @@ nav {
 	padding: 0.5em;
 }
 
-.nav-toggle-lable img{
+.nav-toggle-label img{
 	height: 1em;
 	margin-left: 1em;
 }
 
 .links {
-	display: none;
+	display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 
+        max-height 0.3s ease,
+        opacity 0.2s ease,
+        transform 0.2s ease;
 }
 
 .links a {
@@ -121,18 +130,9 @@ nav {
 }
 
 .nav-toggle:checked ~ .links {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	   -moz-box-orient: vertical;
-	   -moz-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+    max-height: 500px; /* big enough for your menu */
+    opacity: 1;
+    transform: translateY(0);
 }
 
 h1 {
@@ -164,6 +164,8 @@ h1 {
 
 .wege {
 	font-size: 1.5em;
+	margin: auto;
+	max-width: var(--max-page-width);
 	display: none;
 }
 
@@ -538,32 +540,27 @@ footer a img {
 }
 
 @media only screen and (min-width: 1000px) {
-	.nav-toggle-lable{
-		display: none;
-	}
+    nav {
+        align-items: center;
+    }
 
-	.links {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-webkit-flex-direction: row;
-		   -moz-box-orient: horizontal;
-		   -moz-box-direction: normal;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
-		-webkit-box-pack: center;
-		-webkit-justify-content: center;
-		   -moz-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-	}
+    .nav-toggle-label {
+        display: none;
+    }
 
-	.links a {
-		width: unset;
-		margin: 0 0.5em;
-	}
+    .links {
+        display: flex;
+        flex-direction: row;
+
+        /* IMPORTANT: disable mobile animation system */
+        max-height: none;
+        opacity: 1;
+        transform: none;
+        overflow: visible;
+    }
+
+    .links a {
+        width: unset;
+        margin: 0 0.5em;
+    }
 }
