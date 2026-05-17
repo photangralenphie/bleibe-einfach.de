@@ -1,0 +1,40 @@
+.h2 {
+    font-size: 2.3em;
+    margin: 2em 1em 0.5em;
+
+}
+
+.h2:first-of-type{
+    margin-top: 3em;
+}
+
+.h3 {
+    margin: 0 1.5em;
+    font-size: 2em;
+}
+
+.h4 {
+    margin: 0 2em;
+    font-size: 1.5em;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
+.a {
+    text-decoration: underline;
+}
+
+.ul {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-left: 3.5em;
+}
+
+.p {
+    margin: 0 2em 2em;
+    font-size: 1.5em;
+}
+
+.nomargin{
+    margin-bottom: 0;
+}
