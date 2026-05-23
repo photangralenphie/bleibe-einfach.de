@@ -7,7 +7,9 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/second.css">
 	<link rel="stylesheet" href="/fonts/Fresca.css">
+	<link rel="stylesheet" href="/css/iframe-consent.css">
 	<link rel="stylesheet" href="/lightbox/css/lightbox.css">
+
 	<script type="module" src="/components/header.js"></script>
 	<script type="module" src="/components/footer.js"></script>
 	<title>Impressum | "Bleibe - Einfach" - Unterkunft f&uuml;r Pilger und Radfahrer</title>
@@ -121,11 +123,33 @@
 		Lightbox by Lokesh Dhakar: <a class="a" href="https://www.lokeshdhakar.com/projects/lightbox2/">https://www.lokeshdhakar.com/projects/lightbox2/</a> 
 	</p>
 	<p class="p">Websiteversion <a class="a" href="https://github.com/photangralenphie/bleibe-einfach.de/commits/main/">1.2.9</a><p class="p">
+	<h2 class="h2">Entwickler-Werkzeug</h2>
+
+	<p class="p">Mit diesem Button k&ouml;nnen gespeicherte Einwilligungen f&uuml;r externe Google-Inhalte aus dem Browser entfernt werden.</p>
+
+	<p class="p"><button type="button" id="reset-iframe-consent" class="iframe-consent-btn">Gespeicherte Google-Einwilligung l&ouml;schen</button></p>
+
 </main>
 
 <site-footer></site-footer>
 
 <div class="top"><a href="#"><img src="/bilder/angle-double-up-solid.svg" alt="topbutton"></a></div>
+
+<script>
+(function () {
+    var resetButton = document.getElementById('reset-iframe-consent')
+
+    if (!resetButton) {
+        return
+    }
+
+    resetButton.addEventListener('click', function () {
+        localStorage.removeItem('bleibeEinfachIframeConsent')
+        localStorage.removeItem('bleibeEinfachIframeConsentRemember')
+        alert('Gespeicherte Google-Einwilligungen wurden gel\u00f6scht.')
+    })
+})()
+</script>
 
 </body>
 </html>

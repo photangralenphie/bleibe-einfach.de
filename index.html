@@ -9,8 +9,12 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/fonts/Fresca.css">
 	<link rel="stylesheet" href="/lightbox/css/lightbox.css" >
+	
+	<link rel="stylesheet" href="/css/iframe-consent.css">
 	<script type="module" src="/components/header.js"></script>
 	<script type="module" src="/components/footer.js"></script>
+	
+	<script type="module" src="/components/iframe-consent.js"></script>
 	<title>"Bleibe - Einfach" - Unterkunft f&uuml;r Pilger und Radfahrer</title>
 	
 	<!--references for favicon-->
@@ -132,7 +136,7 @@
 				</li>
 			</ul>
 		</div>
-		<iframe class="roundimage" src="https://www.google.com/maps/embed?pb=!4v1560344877406!6m8!1m7!1sCAoSLEFGMVFpcE9pdnZlZnJMY2poelJ6S1VYX1lBcmxpNGhZSGUtdXpDSi1BZnpI!2m2!1d51.3804709!2d12.4361935!3f272.252075120364!4f-18.361653909094798!5f0.4000000000000002" style="border:0" allowfullscreen></iframe>
+		<div class="roundimage google-embed-consent" data-consent-service="maps" data-iframe-title="Panoramaansicht auf Google Maps" data-consent-message="Zum Anzeigen der interaktiven Rundumansicht werden Inhalte von Google Maps geladen." data-iframe-src="https://www.google.com/maps/embed?pb=!4v1560344877406!6m8!1m7!1sCAoSLEFGMVFpcE9pdnZlZnJMY2poelJ6S1VYX1lBcmxpNGhZSGUtdXpDSi1BZnpI!2m2!1d51.3804709!2d12.4361935!3f272.252075120364!4f-18.361653909094798!5f0.4000000000000002"></div>
 		<div class="item">
 			<div id="reservierung" class="anchor"></div>
 			<h2>Reservierung</h2>
@@ -152,7 +156,7 @@
 		</div>
 		<div class="item calender">
 			<h2>Belegungskalender</h2>
-			<iframe  src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FBerlin&amp;src=ajJvcXZqOW9mZm1ndTFnNXJxNjlybWw1dTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D81B60&amp;showTitle=0&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" ></iframe>
+			<div class="google-embed-consent" data-consent-service="calendar" data-iframe-title="Belegungskalender (Google Kalender)" data-consent-message="Zum Anzeigen des Belegungskalenders werden Inhalte von Google Kalender geladen." data-iframe-src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FBerlin&amp;src=ajJvcXZqOW9mZm1ndTFnNXJxNjlybWw1dTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D81B60&amp;showTitle=0&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0"></div>
 			<p><img src="/bilder/belegt.png" alt="rote box"> Belegung: Anreisetag ab 14 Uhr - Abreisetag bis 11 Uhr</p>
 		</div>
 		<div class="item">
@@ -179,7 +183,7 @@
 		<div class="item anreise">
 			<div id="anreise" class="anchor"></div>
 			<h2>Anreise</h2>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d622.5553800328767!2d12.435932063396136!3d51.380606611771775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a657beae3721f9%3A0x4c1e855218ad125e!2s%22Bleibe+-+Einfach%22+Unterkunft+f%C3%BCr+Pilger+und+Radfahrer!5e0!3m2!1sde!2sde!4v1560343937366!5m2!1sde!2sde" style="border:0" allowfullscreen></iframe>
+			<div class="google-embed-consent" data-consent-service="maps" data-iframe-title="Anfahrt auf Google Maps" data-consent-message="Zum Anzeigen der Karte werden Inhalte von Google Maps geladen." data-iframe-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d622.5553800328767!2d12.435932063396136!3d51.380606611771775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a657beae3721f9%3A0x4c1e855218ad125e!2s%22Bleibe+-+Einfach%22+Unterkunft+f%C3%BCr+Pilger+und+Radfahrer!5e0!3m2!1sde!2sde!4v1560343937366!5m2!1sde!2sde"></div>
 			<p>
 				Wir liegen an zahlreichen Rad- und Pilgerouten:
 			</p>
@@ -252,6 +256,8 @@
 <site-footer></site-footer>
 
 <div class="top"><a href="#"><img src="/bilder/angle-double-up-solid.svg" alt="topbutton"></a></div>
+
+<iframe-consent-banner></iframe-consent-banner>
 
 <script src="/lightbox/js/lightbox-plus-jquery.js"></script>
 <!--  Lightbox by Lokesh Dhakar: Website: https://www.lokeshdhakar.com/projects/lightbox2/ -->
