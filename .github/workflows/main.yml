@@ -19,7 +19,7 @@ jobs:
           SFTP_USER: ${{ secrets.SFTP_USER }}
           SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
           SFTP_PORT: 23
-          REMOTE_PATH: /web/bleibe-einfach.de/test
+          REMOTE_PATH: /web/bleibe-einfach.de/
         run: |
           lftp -u "$SFTP_USER","$SFTP_PASSWORD" sftp://$SFTP_HOST:$SFTP_PORT <<EOF
           set sftp:auto-confirm yes
